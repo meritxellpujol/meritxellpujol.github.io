@@ -2234,6 +2234,7 @@ span.error {
 .social {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .social ul {
@@ -2250,7 +2251,7 @@ span.error {
 .social i {
     width: 7rem;
     height: 7rem;
-    color: #FFF;
+    color: white;
     background: black;
     font-size: 40px;
     text-align:center;
@@ -2267,7 +2268,7 @@ span.error {
 }
 
 .social i:hover {
-    color: #FFF;
+    color: #D63447;
     text-decoration: none;
     transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
@@ -2278,13 +2279,58 @@ span.error {
 
 
 .social .fa-google-plus:hover { /* round google plus icon*/
-    background: #e64522;
+    background: #D63447;
 }
 
 .social .fa-github:hover { /* round github icon*/
-    background: #343434;
+    background: #D63447;
 }
 
 .social .fa-linkedin:hover { /* round linkedin icon*/
-    background: #0094BC;
+    background: #D63447;
+}
+
+.pagination {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items:baseline;
+  flex-wrap: nowrap;
+
+  width: 100%;
+
+
+}
+
+
+@media (max-width: 991.98px) {
+  .pagination a {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+.pagination a {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 120%;
+  color: white;
+  padding: 0em 0em 4em;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: black;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: black;
+  color: #D63447;
+  font-weight: 120%;
+}
+
+.title {
+align-content: flex-end;
+align-items: flex-end;
 }
