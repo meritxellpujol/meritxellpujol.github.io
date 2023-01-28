@@ -26,4 +26,11 @@ $('#ChangeToggle').click(function () {
         $('#ChangeToggle').html('<span class="ToggleButton glyphicon glyphicon-remove"></span>');
     }
 });
+
+$(document).ready(function(){
+    $('.close-button').click(function(){
+        $('.overlay').remove();
+    });
+});
+
 </script>

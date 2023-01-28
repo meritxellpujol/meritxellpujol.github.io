@@ -675,3 +675,9 @@ var animateReveal = function() {
 	}
 
 }
+
+$(document).ready(function(){
+    $('.close-button').click(function(){
+        $('.overlay').remove();
+    });
+});
