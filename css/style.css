@@ -2304,32 +2304,23 @@ span.error {
   text-align: right;
 }
 
-
-@media (max-width: 991.98px) {
-  .pagination a {
-    font-size: 16px;
-    width: 100%;
-    line-height: 120%;
-  }
-}
-
 .pagination a {
   font-size: 30px;
   font-weight: 200;
   line-height: 120%;
   color: white;
-  padding: 0em 1em 4em 0em;
+
   text-decoration: none;
 }
 
-.pagination a.active {
-  color: white;
+.pagination a:hover {
+  color: #D63447;
 }
 
-.pagination a:hover:not(.active) {
+.pagination a:active {
   color: #D63447;
-  font-weight: 120%;
 }
+
 
 .title {
 align-content: flex-end;
