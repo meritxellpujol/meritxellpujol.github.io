@@ -159,6 +159,7 @@ a, a:hover {
   letter-spacing: .1rem;
   text-transform: uppercase;
   font-weight: 900;
+  margin: 1rem;
 }
 
 .btn:active, .btn:focus {
@@ -2356,3 +2357,27 @@ align-items: flex-end;
         position: absolute;
     }
 }
+
+
+
+.container2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+@media (max-width: 600px) {
+     .container2 {
+          flex-direction: column;
+          align-items: center;
+        }
+}
+
+
+/* styling the boxes containeing the videos so they are responsive */
+.responsive-video {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 10rem;
+  }
