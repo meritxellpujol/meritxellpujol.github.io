@@ -186,11 +186,18 @@ a, a:hover {
   color: #000;
 }
 
+
 .btn2 {
-  font-size: 20px;
-  padding-bottom: 15px;
-  letter-spacing: .1rem;
-  color: #D63447;
+  font-size: 28px;
+  border-radius: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  letter-spacing:0.05rem;
 
 }
 
@@ -209,12 +216,27 @@ a, a:hover {
 }
 
 .btn2.btn2-outline-pill.btn2-custom-light:hover, .btn2.btn2-outline-pill.btn2-custom-light:active, .btn2.btn2-outline-pill.btn2-custom-light:focus {
-  border-color: #f5f5f7;
+  border-color: #ffffff;
 }
 
 .btn2.btn2-bg-white--hover:hover {
-  background-color: #f5f5f7;
-  color: #D63447;
+  background-color: #ffffff;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .btn2 {
+    font-size: 16px;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    letter-spacing:0.05rem;
+  }
 }
 
 #unslate_co--overlayer {
@@ -2318,13 +2340,15 @@ span.error {
     background: #D63447;
 }
 
-.pagination {
+/*.pagination {
   display: inline-flex;
   justify-content: flex-end;
   align-items:baseline;
   flex-wrap: nowrap;
   width: 100%;
   text-align: right;
+  padding-right: 3rem;
+  margin-right: 3rem;
 }
 
 .pagination a {
@@ -2348,7 +2372,7 @@ span.error {
 .title {
 align-content: flex-end;
 align-items: flex-end;
-}
+} */
 
 /* close button in mobile menu */
 
