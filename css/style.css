@@ -278,6 +278,11 @@ position: relative !important;
 
 
 nav-bar {
+
+  color: #2d2926;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
   	height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -286,8 +291,9 @@ nav-bar {
 
 
 .container-nav {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #2d2926;
