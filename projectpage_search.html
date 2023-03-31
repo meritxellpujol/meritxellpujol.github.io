@@ -29,98 +29,73 @@
 
   <!-- nav -->
 
+  <nav class="unslate_co--site-mobile-menu">
+    <div class="close-wrap d-flex">
+      <a href="#" class="d-flex ml-auto js-menu-toggle">
+        <span class="close-label">Close</span>
+        <div class="close-times">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+        </div>
+      </a>
+    </div>
+    <div class="site-mobile-inner"></div>
+  </nav>
+
+
   <div class="unslate_co--site-wrap">
 
     <div class="unslate_co--site-inner">
 
-      <!-- nav -->
+      <div class="lines-wrap">
+        <div class="lines-inner">
+          <div class="lines"></div>
+        </div>
+      </div>
+      <!-- END lines -->
+
       <nav class="unslate_co--site-nav site-nav-target">
 
-        <div class="nav-bar">
+        <div class="container">
 
-          <!-- nav logo -->
+          <div class="row align-items-center justify-content-between text-left">
+            <div class="site-logo  pos-absolute">
+              <a href="index.html" class="unslate_co--site-logo">Meritxell<span>_</span></a>
+            </div>
+            <div class="col text-right">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li><a href="#portfolio-section" class="nav-link">Work</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li><a href="#services-section" class="nav-link">Download CV</a></li>
+              </ul>
 
-          <div class="site-logo  pos-absolute">
-            <a href="index.html" class="unslate_co--site-logo">Meritxell<span>_</span></a>
-          </div>
-          <!-- nav menu -->
+              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                <li><a href="#" class="js-menu-toggle">Menu</a></li>
+              </ul>
+            </div>
 
-
-          <div class="container-nav text-lg-right text-right">
-            <ul-nav>
-              <li-nav><span-nav class="active" href="index.html">Home</span-nav></li-nav>
-              <li-nav><span-nav href="about.html">About us</span-nav></li-nav>
-              <li-nav><span-nav href="#contact-section">Contact</span-nav></li-nav>
-
-            </ul-nav>
-
-
-            <ul-nav class="site-nav-ul-none-onepage d-inline-block d-lg-none">
-              <li-nav><span-nav href="#" class="js-menu-toggle"><i class="fa fa-bars"></i></span-nav></li-nav>
-            </ul-nav>
           </div>
         </div>
 
       </nav>
       <!-- END nav -->
-  
-      <br><br><br><br><br><br>
-      <div class="container">
+</div>
+      <br><br><br>
+      <div class="cover-v1 jarallax" style="background-image: url('images/Search/search_header-overlay.jpg');height: 60vh;">
+        <div class="container">
+          <div class="row align-items-center">
 
-        <div class="portfolio-single-wrap unslate_co--section">
-
-          <div class="portfolio-single-inner">
-
-            <h1 class="projectheading">Adapted search</h1>
-            <hr>
-            <div class="row">
-
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="detail-v1">
-                  <span class="detail-label">Client/team</span>
-                  <span class="detail-val">IKEA</span>
-                </div>
-              </div>
-
-              <div class="col-sm-16 col-md-3 col-lg-3">
-                <div class="detail-v1">
-                  <span class="detail-label">Project Date</span>
-                  <span class="detail-val">2021/22</span>
-                </div>
-              </div>
-
-
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="detail-v1">
-                  <span class="detail-label">Visit</span>
-                  <span class="detail-val"><a href="www.ikea.co.uk">ikea.com</a></span>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="detail-v1">
-                  <span class="detail-label">Skills</span>
-                  <span class="detail-val">UX research,UX/UI, Product strategy, Workshop facilitation</span>
-                </div>
-              </div>
-            </div>
-            <br><br>
-
-          </div>
-        </div>
-
-
-        <div class="cover-v1" style="background-image: url('images/Search/search_header-overlay.jpg');height: 80vh;">
-          <!--<div class="container">
-          <div class="row align-items-center"
             <div class="col-md-12 mx-auto text-center">
-              <h1 class="heading gsap-reveal-hero"><span class="reveal-wrap"><span class="cover" style="margin-left: 100%;"></span>
-                <span class="reveal-content" style="color:#f5f5f5">Adapted Search experience</span></span>
-              </h1>
+              <h1><span class="heading" style="color:#FEFEFE">Adapted search</span></h1>
+
+
             </div>
+
           </div>
-        </div>-->
         </div>
+      </div>
+
+
 
 
         <!-- project details -->
@@ -356,12 +331,11 @@
           </div>
           <br><br><br><br>
           <!--link to next project-->
-          <div class="container2">
-            <a href="projectpage_search.html" class="btn2 btn2-outline-pill btn2-custom-light">Visit next usecase&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
-              </svg></a>
-          </div>
+          <container-proj>
+            <ul-nav><li-nav>
+          <span-proj href="projectpage_compare.html" style="font-size: 24px;text-transform: uppercase;">Visit next&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></span-proj>
+        </li-nav></ul-nav>
+      </container-proj>
         </div>
       </div>
     </div>
@@ -387,10 +361,11 @@
     <a href="https://www.linkedin.com/in/meritxellpujol?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUpGtwTEMRuCpA8H8HAD6Qg%3D%3D"><i class="fas fa-envelope"></i></a>
     <a href="https://www.linkedin.com/in/meritxellpujol?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUpGtwTEMRuCpA8H8HAD6Qg%3D%3D"><i class="fa-brands fa-linkedin-in"></i></a>
     <a href="https://github.com/meritxellpujol"><i class="fab fa-github-square"></i></a>
+    <a href="https://medium.com/@meritxellpujol"><i class="fa-brands fa-medium"></i></a>
   </div>
 
-
-<footer class="unslate_co--footer justify-content-center">
+<br><br>
+<footer class="unslate_co--footer justify-content-center"><br><br>
 
     <p class="site-copyright">
 

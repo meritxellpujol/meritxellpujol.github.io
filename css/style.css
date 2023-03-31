@@ -158,7 +158,7 @@ position: relative !important;
 .btn {
   font-family: "Inter", sans-serif;
   color: #2d2926;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: .005rem;
   position: relative;
@@ -171,6 +171,7 @@ position: relative !important;
   margin-right: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+
 
 
 }
@@ -304,6 +305,22 @@ nav-bar {
   float: right;
 }
 
+.container-proj {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2d2926;
+  padding: 0 1rem 0 0;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  float: right;
+
+
+}
+
 ul-nav {
   list-style-type: none;
   margin: 0;
@@ -314,7 +331,6 @@ ul-nav {
 }
 
 li-nav {
-  display: inline;
   margin: 0;
 	padding: 0;
   justify-content: space-between;
@@ -322,7 +338,7 @@ li-nav {
 
 span-nav {
   position: relative;
-  display: block;
+
   margin: 0 3rem 0 0;
   padding: 0 0 0 0;
   cursor: pointer;
@@ -366,6 +382,40 @@ span-nav:hover:after {
   transition: 0s;
 
 }
+
+
+span-proj {
+  position: relative;
+   margin: 0 3rem 0 0;
+   padding: 0rem 0rem 0rem 0.2rem;
+   width: 0%;
+   height: 1px;
+   top: 50%;
+   margin-top: -0.5px;
+   color: #2d2926;
+ }
+
+
+span-proj:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
+  top: 50%;
+  margin-top: -0.05rem;
+  opacity: 0.5;
+  transition: height 0.3s cubic-bezier(0.5, 0.61, 0.36, 1);
+  background: #D63447;
+}
+
+span-proj:hover:before {
+  height: 2rem;
+  opacity: 0.5;
+  top: 50%;
+
+}
+
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -491,19 +541,22 @@ span-nav:hover:after {
 
 .unslate_co--site-nav .site-nav-ul > li > a:hover:before, .unslate_co--site-nav .site-nav-ul-none-onepage > li > a:hover:before {
   width: calc(100% - 14px);
+  olor: #2d2926;
 }
 
 .unslate_co--site-nav .site-nav-ul > li > a.active, .unslate_co--site-nav .site-nav-ul-none-onepage > li > a.active {
   position: relative;
+  color: #D63447;
 }
 
 .unslate_co--site-nav .site-nav-ul > li > a.active:before, .unslate_co--site-nav .site-nav-ul-none-onepage > li > a.active:before {
-  color: #2d2926;
-  width: calc(100% - 14px);
+  color: #D63447;
+  width: calc(80% - 20px);
 }
 
 .unslate_co--site-nav .site-nav-ul > li.has-children, .unslate_co--site-nav .site-nav-ul-none-onepage > li.has-children {
   position: relative;
+  color: #D63447;
 }
 
 .unslate_co--site-nav .site-nav-ul > li.has-children > .dropdown, .unslate_co--site-nav .site-nav-ul > li.has-children > ul, .unslate_co--site-nav .site-nav-ul-none-onepage > li.has-children > .dropdown, .unslate_co--site-nav .site-nav-ul-none-onepage > li.has-children > ul {
@@ -529,10 +582,12 @@ span-nav:hover:after {
   margin: 0;
   list-style: none;
   line-height: 1;
+
 }
 
 .unslate_co--site-nav .site-nav-ul > li.has-children > .dropdown > li, .unslate_co--site-nav .site-nav-ul > li.has-children > ul > li, .unslate_co--site-nav .site-nav-ul-none-onepage > li.has-children > .dropdown > li, .unslate_co--site-nav .site-nav-ul-none-onepage > li.has-children > ul > li {
   display: block;
+
   /* 2nd level hover*/
 }
 
@@ -547,7 +602,7 @@ span-nav:hover:after {
 }
 
 .unslate_co--site-nav .site-nav-ul > li.has-children > .dropdown > li a:hover, .unslate_co--site-nav .site-nav-ul > li.has-children > ul > li a:hover, .unslate_co--site-nav .site-nav-ul-none-onepage > li.has-children > .dropdown > li a:hover, .unslate_co--site-nav .site-nav-ul-none-onepage > li.has-children > ul > li a:hover {
-  color: #F5F5F5;
+  color: #D63447;
   background: #2d2926;
   padding-left: 30px;
 }
@@ -565,7 +620,7 @@ span-nav:hover:after {
   content: "\e315";
   font-size: 16px;
   top: 50%;
-  color: #2d2926;
+  ccolor: #D63447;
   right: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -630,7 +685,7 @@ span-nav:hover:after {
 }
 
 .unslate_co--site-nav .site-nav-ul > li.active > a:before, .unslate_co--site-nav .site-nav-ul-none-onepage > li.active > a:before {
-  color: #2d2926;
+  color: #D63447;
   width: calc(100% - 40px);
 }
 
@@ -989,8 +1044,8 @@ span-nav:hover:after {
 }
 
 .cover-v1 .heading {
-  font-size: 3.5rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 200;
   color: #2d2926;
   justify-content: center;
 
@@ -998,11 +1053,20 @@ span-nav:hover:after {
 
 @media (max-width: 991.98px) {
   .cover-v1 .heading {
+    font-size: 3.2rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 590px) {
+  .cover-v1 .heading {
     font-size: 2rem;
     justify-content: center;
     text-align: center;
   }
 }
+
 
 .cover-v1 .blog-heading {
   font-weight: 900;
@@ -1385,7 +1449,7 @@ span-nav:hover:after {
 }
 
 .unslate_co--section {
-  padding: 3.5rem 0;
+  padding: 1rem 0;
   color: #2d2926;
 }
 
@@ -1411,8 +1475,8 @@ span-nav:hover:after {
 }
 
 .heading-h3 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 42px;
+  font-weight: 200;
   color: #2d2926;
 }
 
@@ -2381,7 +2445,7 @@ span.error {
   overflow: hidden;
   display: inline-block;
 }
-
+/* la animacio rosa dels headings*/
 .gsap-reveal-hero .reveal-wrap .cover {
   position: absolute;
   top: 0;
@@ -2395,7 +2459,7 @@ span.error {
 
 .gsap-reveal-hero .reveal-wrap .reveal-content {
   line-height: 1.5;
-  letter-spacing: -.02rem;
+  letter-spacing: 0rem;
   z-index: 1;
   display: inline-block;
   -webkit-transform: translateX(-100%);
@@ -2434,22 +2498,21 @@ span.error {
 
 /* media icons style*/
 .social {
-    margin: 0;
-    padding: 0;
+  display: flex;
     align-items: center;
-    margin: 0 auto;
-
-
-
-
+    justify-content: center;
+    gap: 0.5rem; /* Change the value as needed */
 }
 
+.social a {
+  margin: 0 !important;
+}
 
 .social i {
-    width: 7rem;
-    height: 7rem;
-    color: black;
-    font-size: 24px;
+    width: 6rem;
+    height: 1rem;
+    color: #2d2926;
+    font-size: 2rem;
     text-align:center;
     padding-top: 12px;
     border-radius: 50%;
@@ -2461,6 +2524,7 @@ span.error {
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
+    margin-right: 4px; /* Add this line to reduce the spacing */
 
 }
 
@@ -2471,7 +2535,7 @@ span.error {
     -moz-transition: all ease 0.3s;
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s
 
 }
 
