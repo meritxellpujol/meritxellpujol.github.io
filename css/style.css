@@ -125,7 +125,7 @@ a, a:hover {
 }
 
 .unslate_co--site-inner {
-  margin-bottom: 300px;
+  margin-bottom: 180px;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -133,7 +133,8 @@ a, a:hover {
 
 @media (max-width: 991.98px) {
   .unslate_co--site-inner {
-    margin-bottom: auto !important;
+    margin-bottom: 180px !important;
+
   }
 }
 
@@ -154,6 +155,29 @@ position: relative !important;
   }
 }
 
+.tag {
+
+  font-family: "Inter", sans-serif;
+  color: #2d2926;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .005rem;
+  position: relative;
+  border-radius: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 1rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+  color: #2d2926;
+  border: 1.2px solid rgba(45, 41, 38);
+  flex-wrap:wrap;
+
+}
+
+
 
 .btn {
   font-family: "Inter", sans-serif;
@@ -171,9 +195,6 @@ position: relative !important;
   margin-right: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-
-
-
 }
 
 .btn:active, .btn:focus {
@@ -2241,10 +2262,14 @@ figure.dotted-bg:before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 30%;
   z-index: -1;
+}
 
-
+@media (max-width: 691.98px) {
+  .jarallax {
+    height: 50%;
+  }
 }
 
 
