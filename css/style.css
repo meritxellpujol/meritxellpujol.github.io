@@ -101,16 +101,16 @@ body.offcanvas:before {
 }
 
 body, .unslate_co--site-inner {
-  /*background: #2d2926;*/
+background: #F5F5F5;
 }
 
 ::-moz-selection {
-  /*background: #2d2926;*/
-  /*color: #2d2926;*/
+  background: #F5F5F5;
+  color: #F5F5F5;
 }
 
 ::selection {
-  /*background: #2d2926;*/
+  background: #F5F5F5;
   color: #F5F5F5;
 }
 
@@ -189,22 +189,43 @@ position: relative !important;
 }
 
 .btn {
-  font-family: "Inter", sans-serif;
-  color: #2d2926;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: .005rem;
-  position: relative;
-  background-color: #F5F5F5 !important;
-  border-radius: 40px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 30px;
-  padding-right: 40px;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+    font-family: "Inter", sans-serif;
+    color: #2d2926;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .005rem;
+    position: relative;
+    background-color: #F5F5F5 !important;
+    border-radius: 40px;
+    padding: 14px 20px 14px 40px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
 
+  .arrow-icon {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath d="M 5 12 L 19 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="square" /%3E%3Cpath d="M 19 12 L 15.5 8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="square" /%3E%3Cpath d="M 19 12 L 15.5 15.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="square" /%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 40px 40px;
+}
+
+.btn svg {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.btn span {
+  padding-right: 60px;
+  display: inline-block;
+  position: relative;
 }
 
 .btn:active, .btn:focus {
@@ -1026,7 +1047,7 @@ span-proj:hover:before {
   transform: translate(-50%, -50%);
 }
 
-.unslate_co--site-mobile-menu ul > li.has-children > ul > li.has-children .arrow-collapse {
+.unslate_co--site-mobile-menu ul > li.has-children > ul > li.has-children .ar -collapse {
   top: -10px;
 }
 
@@ -1482,7 +1503,7 @@ span-proj:hover:before {
 
 .unslate_co--section {
   padding: 1rem 0;
-  color: #2d2926;
+  color: ##2d2926;
 }
 
 @media (max-width: 767.98px) {
